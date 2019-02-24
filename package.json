@@ -1,0 +1,62 @@
+{
+  "name": "bespoke-theme-sandy",
+  "version": "1.0.0",
+  "description": "A more serious theme for Bespoke.js with a sandy background color",
+  "homepage": "https://github.com/fegemo/bespoke-theme-sandy",
+  "bugs": "https://github.com/fegemo/bespoke-theme-sandy/issues",
+  "author": {
+    "email": "fegemo@gmail.com",
+    "name": "Flávio Coutinho",
+    "url": "https://github.com/fegemo"
+  },
+  "contributors": [],
+  "main": "./dist/bespoke-theme-sandy.min.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/fegemo/bespoke-theme-sandy.git"
+  },
+  "peerDependencies": {
+    "bespoke": ">=1.0.0",
+    "bespoke-classes": "^1.0.0"
+  },
+  "devDependencies": {
+    "bespoke": "^1.1.0",
+    "bespoke-bullets": "^1.1.0",
+    "bespoke-hash": "^1.0.2",
+    "bespoke-keys": "^1.1.0",
+    "bespoke-progress": "^1.0.0",
+    "bespoke-scale": "github:fegemo/bespoke-scale#use-current-slide",
+    "bespoke-simple-overview": "^1.0.0",
+    "bespoke-state": "^1.0.0",
+    "bespoke-touch": "^1.0.0",
+    "brfs": "^2.0.2",
+    "browserify": "^16.2.3",
+    "delete": "^1.1.0",
+    "gh-pages": "^2.0.1",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "6.0.0",
+    "gulp-csso": "^3.0.1",
+    "gulp-header": "^2.0.7",
+    "gulp-livereload": "^4.0.1",
+    "gulp-pug": "^4.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^2.4.0",
+    "gulp-stylus": "^2.6.0",
+    "gulp-uglify": "^3.0.1",
+    "gulp-webserver": "^0.9.1",
+    "insert-css": "^2.0.0",
+    "normalizecss": "^3.0.0",
+    "st": "^1.2.2",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^2.0.0"
+  },
+  "dependencies": {},
+  "engines": {
+    "node": ">=7.3.0"
+  },
+  "license": "MIT",
+  "keywords": [
+    "bespoke-plugin",
+    "bespoke-theme"
+  ]
+}
