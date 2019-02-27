@@ -31,11 +31,9 @@ $overview-space-between-slides = $overview-slide-distance / 83.333px
       for i in 1..6
         &.bespoke-after-{i}
           display flex
-          will-change transform
           transform translate3d(i*($slide-width + $overview-space-between-slides), $overview-slide-inactive-y-diff, - $overview-slide-distance)
         &.bespoke-before-{i}
           display flex
-          will-change transform
           transform translate3d(i*($slide-width + $overview-space-between-slides)*(-1), $overview-slide-inactive-y-diff, - $overview-slide-distance)
 
     .bespoke-bullet-inactive

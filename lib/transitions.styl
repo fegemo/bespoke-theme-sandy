@@ -10,7 +10,9 @@
       transform translate3d(-101%, 0, 0)
     .bespoke-after
       transform translate3d(101%, 0, 0)
-  .transition-subtle
+
+  .transition-subtle,
+  .transition-subtle-to-right
       overflow hidden
     .bespoke-slide
       transform translate3d(0, 0, 0)
@@ -19,6 +21,32 @@
       transform translate3d(-10%, 0, 0)
     .bespoke-after
       transform translate3d(10%, 0, 0)
+  .transition-subtle-to-left
+    overflow hidden
+    .bespoke-slide
+      transform translate3d(0, 0, 0)
+    .bespoke-before
+      transform translate3d(10%, 0, 0)
+    .bespoke-after
+      transform translate3d(-10%, 0, 0)
+  .transition-subtle-to-bottom
+    overflow hidden
+    .bespoke-slide
+      transform translate3d(0, 0, 0)
+    .bespoke-before
+      transform translate3d(0, -10%, 0)
+    .bespoke-after
+      transform translate3d(0, 10%, 0)
+  .transition-subtle-to-top
+    overflow hidden
+    .bespoke-slide
+      transform translate3d(0, 0, 0)
+    .bespoke-before
+      transform translate3d(0, 10%, 0)
+    .bespoke-after
+      transform translate3d(0, -10%, 0)
+
+
   .transition-giant-wheel
     overflow hidden
     .bespoke-slide

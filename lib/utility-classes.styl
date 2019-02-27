@@ -324,32 +324,40 @@ for num in (2..5)
     margin-left 1em
 
 
-// an informational note
+// informational notes (warning, info)
 .note
-  border 1px solid darkgoldenrod
+  border 1px solid transparent
   list-style-type none
   border-radius 5px
   box-shadow 3px 3px 3px rgba(0, 0, 0, .2)
   padding 0.3em 0.5em
-  background linear-gradient(to right bottom, lightyellow, #FFF176)
   &::before
-    content "\26A0"
+    content ""
     margin-right 1rem
-    color black
-    border inherit
-    border-radius 50%
-    width 1em
-    height 1em
+    color currentColor
+    width 1.5em
+    height 1.5em
     display inline-block
     text-align center
-    line-height 0.75em
-    background white
-    font-size 2em
-    box-shadow inherit
+    line-height 1.5em
+    font-size 1em
     box-sizing border-box
-  strong
-    color darkgoldenrod
 
+  &.info
+    border-color #0ba8b8
+    background linear-gradient(to right bottom,#ffffe0,#a9dbe0)
+    strong
+      color #0ba8b8
+    &::before
+      content "🛈"
+
+  &.warning
+    border-color darkgoldenrod
+    background linear-gradient(to right bottom, lightyellow, #FFF176)
+    strong
+      color darkgoldenrod
+    &::before
+      content "⚠"
 
 // a badge like bootstrap's pills
 .badge
@@ -383,3 +391,40 @@ for i in 1..6
 @keyframes bouncing-left
   to
     transform translateX(5%) scaleX(.96)
+
+
+// card list
+.card-list
+  display flex
+  flex-direction row
+  flex-wrap wrap
+  justify-content space-around
+  list-style-type none
+  padding 0
+  li
+    flex 1
+    display flex
+    flex-direction column
+    flex-wrap nowrap
+    justify-content flex-start
+    margin-right 0.25em
+    h1, h2, h3, h4, h5, h6, figcaption
+      font-size 1em
+      text-align center
+      order 1
+      margin-top 0.5em !important
+    img
+      max-width 100%
+      object-fit contain
+
+  &.polaroid
+    li
+      background white
+      box-shadow: 0 8px 16px #0014500a, 0 4px 16px #00000014
+      img
+        background-color #f0f8ff
+        border 11px solid white
+
+  &.cover
+    li img
+      object-fit cover

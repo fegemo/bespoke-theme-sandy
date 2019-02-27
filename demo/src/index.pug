@@ -103,6 +103,68 @@ html
           li Nulla eget nibh <a href="#">et enim <strong>sagittis</strong></a> dictum.
         p.bullet This is a <code>.layout-2-column-content</code> slide.
 
+      section.layout-regular
+        h1 Card list
+        ul.card-list
+          li
+            h2 Item 1
+            img(src="imgs/item1.png")
+          li
+            h2 Item 2
+            img(src="imgs/item2.png")
+          li
+            h2 Item 3
+            img(src="imgs/item3.png")
+          li
+            h2 Item 4
+            img(src="imgs/item4.png")
+          li
+            h2 Item 5
+            img(src="imgs/item5.png")
+        p.note.info.
+          The <code>.card-list</code> class turns a simple list into one with
+          a title (<code>h1, h2, h3, h4, h5, h6, figcaption</code>) and an image.
+
+      section.layout-2-column-content
+        h1 Card list polaroid-style
+        div
+          ul.card-list.polaroid
+            li
+              h2 Item 1
+              img(src="imgs/item1.png")
+            li
+              h2 Item 2
+              img(src="imgs/item2.png")
+            li
+              h2 Item 3
+              img(src="imgs/item3.png")
+            li
+              h2 Item 4
+              img(src="imgs/item4.png")
+            li
+              h2 Item 5
+              img(src="imgs/item5.png")
+          p.note.info.
+            By adding <code>.polaroid</code> to a <code>.card-list</code> we
+            get a polaroid effect.<br><br>Check the source code used in this card list
+            to the right.
+        div
+          pre
+            code.
+              &lt;pre&gt;
+                &lt;code&gt;
+                  &lt;ul class="card-list polaroid"&gt;
+                    &lt;li&gt;
+                      &lt;h2&gt;Item 1&lt;/h2&gt;
+                      &lt;img src="imgs/item1.png"&gt;
+                    &lt;li&gt;
+                      &lt;h2&gt;Item 2&lt;/h2&gt;
+                      &lt;img src="imgs/item2.png"&gt;
+                    ...
+                  &lt;/ul&gt;
+                &lt;/code&gt;
+              &lt;/pre&gt;
+
       section.layout-centered-horizontal
         h1 Definition List
         p This is a <code>.layout-centered-horizontal</code> slide

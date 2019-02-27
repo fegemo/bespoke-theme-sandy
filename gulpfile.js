@@ -96,8 +96,7 @@ function imagesDemoTask() {
 }
 
 function cssDemoTask() {
-  return src('demo/src/**/*.css')
-    .pipe(dest('demo/dist'));
+  return src('demo/src/**/*.css').pipe(dest('demo/dist'));
 }
 
 function devTask() {

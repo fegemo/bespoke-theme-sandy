@@ -28,6 +28,7 @@
     flex-direction column
     justify-content center
     align-items center
+    will-change transform
 
     //----
     // In the future, I want to try to specify all sizes in vw/vh in order to
@@ -48,8 +49,8 @@
     .bespoke-bullet-inactive
       transition opacity 0.4s ease
 
-    // only shows next/previous 2 slides and current to increase performance
-    &:not(.bespoke-after-1):not(.bespoke-before-1):not(.bespoke-after-2):not(.bespoke-before-2)
+    // only shows next/previous 3 slides and current to increase performance
+    &:not(.bespoke-after-1):not(.bespoke-before-1):not(.bespoke-after-2):not(.bespoke-before-2):not(.bespoke-after-3):not(.bespoke-before-3)
       display none
 
   .emphatic
