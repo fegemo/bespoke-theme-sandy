@@ -415,7 +415,10 @@ for i in 1..6
       margin-top 0.5em !important
     img
       max-width 100%
+      margin auto
       object-fit contain
+      object-position center
+      order 0
 
   &.polaroid
     li
@@ -428,3 +431,12 @@ for i in 1..6
   &.cover
     li img
       object-fit cover
+  &.contain
+    li img
+      object-fit contain
+
+  &.title-top
+    h1, h2, h3, h4, h5, h6, figcaption
+      order 0
+    img
+      order 1
