@@ -99,3 +99,16 @@
       transform rotateY(-10deg)
     .bespoke-after
       transform rotateY(10deg)
+
+  .transition-zoom-in
+    .bepoke-slide
+      transform scale(1)
+      transition-duration $transition-duration
+      transition-easing $transition-easing
+      transition-properties opacity, transform
+    .bespoke-before
+      opacity 0
+      transform scale(1.4)
+    .bespoke-after
+      opacity 0
+      transform scale(0.7)

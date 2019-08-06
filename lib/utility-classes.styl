@@ -39,6 +39,11 @@ img[alt$="left"]
   position relative
   & > p
     margin 0
+  &.opacity-only
+    .bespoke-bullet
+      transition-property opacity
+      &:not(.bespoke-bullet-current)
+        transform initial
   &.clean
     .bespoke-bullet:not(.bespoke-bullet-current)
       visibility hidden
