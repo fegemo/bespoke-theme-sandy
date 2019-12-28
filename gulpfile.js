@@ -31,7 +31,7 @@ function stylusTask() {
         paths: ['./node_modules']
       })
     )
-    .pipe(autoprefixer({ browsers: ['last 2 versions'] }))
+    .pipe(autoprefixer())
     .pipe(csso())
     .pipe(sourcemaps.write('.'))
     .pipe(dest('lib/tmp', { sourcemaps: '.' }));
