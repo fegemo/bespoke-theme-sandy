@@ -258,7 +258,8 @@ img.centered
 .rounded
   border-radius 4px
 
-.clearer
+.clearer,
+.clear-both
   clear both
 
 // code and pre
@@ -282,6 +283,14 @@ img.centered
   pre.hljs + pre.hljs
     margin-top 0
 
+.inverted-text-colors
+  background #333
+  color #eee
+
+.smaller-text-80
+  font-size 80%
+.smaller-text-70
+  font-size 70%
 
 // lists
 .horizontal-list
@@ -370,7 +379,7 @@ for num in (2..5)
     strong
       color #0ba8b8
     &::before
-      content "🛈"
+      content "ℹ️"
 
   &.warning
     border-color darkgoldenrod
@@ -378,7 +387,7 @@ for num in (2..5)
     strong
       color darkgoldenrod
     &::before
-      content "⚠"
+      content "⚠️"
 
 // a badge like bootstrap's pills
 .badge
