@@ -7,7 +7,7 @@ const bespoke = require('bespoke'),
   progress = require('bespoke-progress'),
   overview = require('bespoke-simple-overview'),
   math = require('bespoke-math'),
-  // search = require('bespoke-search'),
+  search = require('bespoke-search'),
   hash = require('bespoke-hash'),
   state = require('bespoke-state');
 
@@ -22,7 +22,9 @@ bespoke.from('article', [
   hash(),
   overview({ insertStyles: false }),
   bullets('.bullet'),
-  // search(),
+  search({
+    insertStyles: false
+  }),
   deck => {
     // makes the content visible to avoid FoUC
     deck.parent.style.visibility = 'visible';
